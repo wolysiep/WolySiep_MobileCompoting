@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharepageActivity"
+    >
+
+    <ImageView
+        android:layout_width="401dp"
+        android:layout_height="211dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bgatas" />
+
+    <ImageView
+        android:id="@+id/backshare"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        />
+    <ImageView
+        android:id="@+id/myprofile"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/kontakh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US:"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/myprofile"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kontakh1"
+        android:text="Nama Lengkap:"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:id="@+id/inputnama"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Masukan nama disini"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/nama"
+        android:layout_marginRight="30dp"
+        android:textSize="17sp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize"
+        />
+
+    <TextView
+        android:id="@+id/telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputnama"
+        android:text="Nomor Telepon:"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:id="@+id/inputtelepon"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Masukan nomor disini"
+        android:layout_marginLeft="30dp"
+        android:inputType="number"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/telepon"
+        android:textSize="17sp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize"
+        />
+
+    <TextView
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputtelepon"
+        android:text="Pesan anda:"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:id="@+id/inputpesan"
+        android:layout_below="@id/pesan"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:hint="Masukkan pesan di sini..." />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnshare"
+        android:layout_centerHorizontal="true"
+        android:layout_width="230dp"
+        android:text="Kirim Sekarang"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_height="47dp"
+        android:layout_below="@id/inputpesan"
+        android:background="@drawable/buton_saya"
+        />
+    <LinearLayout
+        android:id="@+id/openwith"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/btnshare"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:text="Open With"
+            android:layout_below="@id/btnlogin"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_marginStart="-220dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/openwith"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       >
+       <ImageView
+           android:id="@+id/togoogle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/googles"
+           />
+       <ImageView
+           android:id="@+id/toig"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/igs"
+           />
+       <ImageView
+           android:id="@+id/tolink"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/links"
+           />
+       <ImageView
+           android:id="@+id/tofb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/fbs"
+           />
+   </LinearLayout>
+</RelativeLayout>

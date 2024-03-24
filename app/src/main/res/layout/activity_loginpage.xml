@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginpageActivity">
+
+    <ImageView
+        android:id="@+id/imgatas"
+        android:layout_width="427dp"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bglogin"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/inputt"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgatas"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <!-- Input username -->
+        <LinearLayout
+            android:id="@+id/txtedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Orientation">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Masukan username anda"
+                android:paddingStart="40dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/user"
+                android:layout_marginLeft="-260dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Input password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:ignore="Orientation">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Masukan password anda"
+                android:inputType="textPassword"
+                android:paddingStart="40dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry,VisualLintTextFieldSize" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/lock"
+                android:layout_marginLeft="-260dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Lupa Password -->
+    <TextView
+        android:id="@+id/lupapassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputt"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="-35dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:onClick="onLinkClicked"
+        android:text="Lupa Password?"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="12sp"
+        />
+
+
+    <!--Button -->
+    <Button
+        android:id="@+id/btnlogin"
+        android:background="@drawable/buton_saya"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/inputt"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+
+    <!--Login dengan -->
+    <LinearLayout
+        android:id="@+id/backtomain"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:text="Login Dengan"
+            android:layout_below="@id/btnlogin"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_marginStart="-235dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!--Sosmed -->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/google"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/aple"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="170dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/fb"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="240dp"
+        tools:ignore="ContentDescription" />
+
+
+    <!--To Register -->
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="28dp"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Belum Punya Akun ??"
+                tools:ignore="HardcodedText,MissingPrefix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            tools:ignore="RtlSymmetry,VisualLintBounds">
+            <TextView
+                android:id="@+id/buatakun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buat Sekarang"
+                android:textColor="@color/design_default_color_primary"
+                android:fontFamily="@font/poppinssemibold"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

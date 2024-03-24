@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetpageActivity">
+
+    <ImageView
+        android:id="@+id/backtotologin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/imgatas"
+        android:layout_width="408dp"
+        android:layout_height="209dp"
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/iconforget"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregister"
+        android:text="Ganti Password"
+        android:layout_below="@id/imgatas"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
+
+    <LinearLayout
+        android:id="@+id/inputt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtregister"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="10.0">
+
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email/Telepon"
+            android:paddingStart="40dp"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+        <EditText
+            android:id="@+id/txtedit2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Password lama"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password baru"
+            android:inputType="textPassword"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-100dp"
+            android:src="@drawable/key2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/key2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-155dp"
+            android:src="@drawable/cloud"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-87dp"
+            android:src="@drawable/user"
+            tools:ignore="ContentDescription,VisualLintBounds" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnubahpassword"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/inputt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"
+        android:width="200dp"
+        android:background="@drawable/buton_saya"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Ubah Sekarang"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/bgbunga"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btnubahpassword"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/imgshopping2"
+        android:layout_marginStart="150dp"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

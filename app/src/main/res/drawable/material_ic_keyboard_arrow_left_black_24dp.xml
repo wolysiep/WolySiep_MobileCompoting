@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Item untuk keadaan ketika tombol ditekan -->
+    <item android:state_pressed="true">
+        <!-- Tambahkan drawable yang ingin ditampilkan saat tombol ditekan -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0000" /> <!-- Contoh: warna merah -->
+        </shape>
+    </item>
+
+    <!-- Item untuk keadaan ketika tombol dalam keadaan default -->
+    <item>
+        <!-- Tambahkan drawable yang ingin ditampilkan saat tombol dalam keadaan default -->
+        <shape android:shape="rectangle">
+            <solid android:color="#00FF00" /> <!-- Contoh: warna hijau -->
+        </shape>
+    </item>
+
+    <!-- Item untuk keadaan tertentu lainnya -->
+    <!-- Anda dapat menambahkan item-item tambahan sesuai kebutuhan Anda -->
+
+</selector>
