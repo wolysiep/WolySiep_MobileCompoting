@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDECEC"
+    tools:ignore="VisualLintBounds">
+
+    <RelativeLayout
+        android:id="@+id/hedarview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_card_menu"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/imgbacks"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:elevation="7dp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imgpilihan"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/imglogos"
+            android:src="@drawable/pilihan"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imglogos"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logoh"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hedarview"
+        android:numColumns="2"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        android:background="@android:color/white"
+        android:layout_margin="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/footerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_card_menu"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/imgberandas"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:elevation="7dp"
+            android:src="@drawable/beranda2"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imgkeranjangs"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/keranjang1"
+            android:elevation="7dp"
+            android:layout_toEndOf="@id/imgberandas"
+            android:layout_marginStart="30dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgpesans"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pesans1"
+            android:elevation="7dp"
+            android:layout_toEndOf="@id/imgkeranjangs"
+            android:layout_marginStart="30dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgakuns"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/akun1"
+            android:elevation="7dp"
+            android:layout_toEndOf="@id/imgpesans"
+            android:layout_marginStart="30dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</RelativeLayout>

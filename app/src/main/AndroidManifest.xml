@@ -13,6 +13,12 @@
         android:theme="@style/Theme.TESS"
         tools:targetApi="31">
         <activity
+            android:name=".RecycleViewGridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecycviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SharepageActivity"
             android:exported="false" />
         <activity

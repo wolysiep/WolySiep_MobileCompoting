@@ -12,7 +12,8 @@
         android:layout_width="401dp"
         android:layout_height="211dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/bgatas" />
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/backshare"
@@ -20,39 +21,40 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/back"
-        />
+        tools:ignore="ContentDescription" />
+
     <ImageView
         android:id="@+id/myprofile"
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/profile"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
     <TextView
         android:id="@+id/kontakh1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CONTACT US:"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:layout_below="@id/myprofile"
         android:fontFamily="@font/poppinssemibold"
-        android:textSize="30dp"
-        />
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/kontakh1"
-        android:text="Nama Lengkap:"
-        android:fontFamily="@font/poppinssemibold"
-        android:textSize="15dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="5dp"
-        />
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nama Lengkap:"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
     <EditText
         android:id="@+id/inputnama"
         android:layout_width="match_parent"
@@ -71,12 +73,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/inputnama"
-        android:text="Nomor Telepon:"
-        android:fontFamily="@font/poppinssemibold"
-        android:textSize="15dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="5dp"
-        />
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nomor Telepon:"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <EditText
         android:id="@+id/inputtelepon"
@@ -97,38 +99,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/inputtelepon"
-        android:text="Pesan anda:"
-        android:fontFamily="@font/poppinssemibold"
-        android:textSize="15dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="5dp"
-        />
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Pesan anda:"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
     <EditText
         android:id="@+id/inputpesan"
-        android:layout_below="@id/pesan"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/pesan"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:gravity="start|top"
+        android:hint="Masukkan pesan di sini..."
         android:inputType="textMultiLine"
         android:lines="5"
         android:maxLines="7"
         android:scrollbars="vertical"
-        android:hint="Masukkan pesan di sini..." />
+        android:textColorHint="#78909C"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
 
     <Button
-        android:layout_marginTop="20dp"
         android:id="@+id/btnshare"
-        android:layout_centerHorizontal="true"
         android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/inputpesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buton_saya"
+        android:fontFamily="@font/poppinssemibold"
         android:text="Kirim Sekarang"
         android:textSize="20dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:layout_height="47dp"
-        android:layout_below="@id/inputpesan"
-        android:background="@drawable/buton_saya"
-        />
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
     <LinearLayout
         android:id="@+id/openwith"
         android:layout_width="300dp"
@@ -175,24 +180,24 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/googles"
-           />
+           tools:ignore="ContentDescription" />
        <ImageView
            android:id="@+id/toig"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/igs"
-           />
+           tools:ignore="ContentDescription" />
        <ImageView
            android:id="@+id/tolink"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/links"
-           />
+           tools:ignore="ContentDescription" />
        <ImageView
            android:id="@+id/tofb"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/fbs"
-           />
+           tools:ignore="ContentDescription" />
    </LinearLayout>
 </RelativeLayout>

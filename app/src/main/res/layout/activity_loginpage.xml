@@ -51,13 +51,14 @@
                 android:paddingStart="40dp"
                 android:textSize="14sp"
                 tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="-260dp"
                 android:layout_marginTop="13dp"
                 android:src="@drawable/user"
-                android:layout_marginLeft="-260dp"
-                />
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
         </LinearLayout>
 
@@ -75,14 +76,14 @@
                 android:inputType="textPassword"
                 android:paddingStart="40dp"
                 android:textSize="14sp"
-                tools:ignore="Autofill,HardcodedText,RtlSymmetry,VisualLintTextFieldSize" />
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:src="@drawable/lock"
-                android:layout_marginLeft="-260dp"
-                />
+                android:layout_marginStart="-260dp"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
     </LinearLayout>
@@ -99,23 +100,24 @@
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/poppinssemibold"
+        android:minHeight="48dp"
         android:onClick="onLinkClicked"
         android:text="Lupa Password?"
         android:textColor="@color/design_default_color_primary"
         android:textSize="12sp"
-        />
+        tools:ignore="HardcodedText" />
 
 
     <!--Button -->
     <Button
         android:id="@+id/btnlogin"
-        android:background="@drawable/buton_saya"
         android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_below="@id/inputt"
         android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
+        android:background="@drawable/buton_saya"
         android:fontFamily="@font/poppinsbold"
+        android:gravity="center_horizontal"
         android:text="Login"
         android:textSize="15sp"
         tools:ignore="HardcodedText" />
@@ -129,16 +131,17 @@
         android:layout_marginTop="7dp"
         android:layout_below="@id/btnlogin"
         android:layout_centerHorizontal="true">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="110dp"
-            android:text="Login Dengan"
             android:layout_below="@id/btnlogin"
+            android:layout_marginStart="110dp"
             android:fontFamily="@font/poppinssemibold"
+            android:text="Login Dengan"
             android:textColor="@color/black"
             android:textSize="12sp"
-            tools:ignore="HardcodedText,ObsoleteLayoutParam"/>
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,TextContrastCheck" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -198,8 +201,8 @@
         <LinearLayout
             android:layout_width="155dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="28dp"
-            tools:ignore="TextSizeCheck">
+            android:layout_marginStart="28dp"
+            tools:ignore="TextSizeCheck,VisualLintBounds">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -213,15 +216,16 @@
             android:layout_width="155dp"
             android:layout_height="50dp"
             android:paddingStart="5dp"
-            tools:ignore="RtlSymmetry,VisualLintBounds">
+            tools:ignore="RtlSymmetry,VisualLintBounds,TextSizeCheck">
+
             <TextView
                 android:id="@+id/buatakun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
                 android:text="Buat Sekarang"
                 android:textColor="@color/design_default_color_primary"
-                android:fontFamily="@font/poppinssemibold"
-                />
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
     </LinearLayout>

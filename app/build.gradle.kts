@@ -3,17 +3,9 @@ plugins {
     id("kotlin-android")
 }
 
-
-
 android {
     namespace = "com.example.tess"
     compileSdk = 34
-
-    kotlinOptions {
-        freeCompilerArgs += "-Xsuppress=UNUSED_PARAMETER,UNCHECKED_CAST,UNUSED_VARIABLE"
-    }
-
-
 
     defaultConfig {
         applicationId = "com.example.tess"
@@ -34,22 +26,22 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         viewBinding = true
     }
-
-
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
