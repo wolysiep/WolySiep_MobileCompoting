@@ -63,12 +63,12 @@
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:src="@drawable/to_right"
             android:layout_below="@id/txtkontent"
             android:layout_marginTop="45dp"
-            android:layout_marginLeft="285dp"
+            android:layout_marginLeft="260dp"
             tools:ignore="RtlHardcoded" />
 
 

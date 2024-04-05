@@ -1,31 +1,35 @@
 package com.example.tess
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.tess.databinding.ActivityRecycviewBinding
 
 class RecycviewActivity : AppCompatActivity() {
-    private lateinit var papuansRecyclerView: RecyclerView
+    private lateinit var binding: ActivityRecycviewBinding
     private lateinit var papuansAdapter: MyAdapter
     private lateinit var listJualan: ArrayList<Items>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityRecycviewBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_recycview)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        papuansRecyclerView = findViewById(R.id.papuansshopp)
+
+
+        binding.papuansshopp.layoutManager = LinearLayoutManager(this)
         listJualan = ArrayList()
 
-        // Menambahkan data dummy ke dalam listJualan
+
         listJualan.add(Items(R.drawable.noken1, "Noken Papua", "Rp.50.000.00", R.drawable.close, R.drawable.tambahss, R.drawable.like))
         listJualan.add(Items(R.drawable.noken2, "Noken Papua", "Rp.200.0000.00", R.drawable.close, R.drawable.tambahss, R.drawable.like))
         listJualan.add(Items(R.drawable.kalung4, "Kalung Papua", "Rp.500.000.00", R.drawable.close, R.drawable.tambahss, R.drawable.like))
@@ -44,7 +48,20 @@ class RecycviewActivity : AppCompatActivity() {
 
 
         papuansAdapter = MyAdapter(listJualan)
-        papuansRecyclerView.layoutManager = LinearLayoutManager(this)
-        papuansRecyclerView.adapter = papuansAdapter
+        binding.papuansshopp.adapter = papuansAdapter
+
+        // Implementasi fungsi onClick pada tombol-tombol
+        binding.imgberandas.setOnClickListener{
+            startActivity(Intent(this, HomepageActivity::class.java))
+        }
+        binding.imgkeranjangs.setOnClickListener{
+            startActivity(Intent(this, RecycviewActivity::class.java))
+        }
+        binding.imgpesans.setOnClickListener{
+            startActivity(Intent(this, SharepageActivity::class.java))
+        }
+        binding.imgakuns.setOnClickListener{
+            startActivity(Intent(this, ProfilepageActicity::class.java))
+        }
     }
 }

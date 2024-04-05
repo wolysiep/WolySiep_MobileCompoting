@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="6dp"
+        app:cardElevation="7dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/Foto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/noken3"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/Judul"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Judul"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Harga"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Harga"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratting"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tambahs"
+                android:layout_gravity="right"
+                android:layout_marginTop="-80dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

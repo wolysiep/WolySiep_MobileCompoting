@@ -53,16 +53,13 @@ class SharepageActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         toFacebookImageView.setOnClickListener {
             val uri = Uri.parse("https://www.facebook.com")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
-
         val btnShare = findViewById<Button>(R.id.btnshare)
-
 
         btnShare.setOnClickListener {
 
@@ -78,8 +75,18 @@ class SharepageActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
-        binding.backshare.setOnClickListener{
-            startActivity(Intent(this, LoginpageActivity::class.java))
+
+        binding.imgberandas.setOnClickListener{
+            startActivity(Intent(this, HomepageActivity::class.java))
+        }
+        binding.imgkeranjangs.setOnClickListener{
+            startActivity(Intent(this, RecycviewActivity::class.java))
+        }
+        binding.imgpesans.setOnClickListener{
+            startActivity(Intent(this, SharepageActivity::class.java))
+        }
+        binding.imgakuns.setOnClickListener{
+            startActivity(Intent(this, ProfilepageActicity::class.java))
         }
     }
 }

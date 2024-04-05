@@ -4,25 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:elevation="5dp"
+    android:elevation="10dp"
   android:layout_centerHorizontal="true"
-    android:layout_marginTop="10dp"
 
     >
 
-
-    <!-- CardView for Product -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="400dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         app:cardCornerRadius="13dp"
-        app:cardElevation="4dp"
+        app:cardElevation="6dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="7dp"
+        android:layout_margin="10dp"
         >
 
-        <!-- Card content -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +26,7 @@
             android:background="#FAF1F1"
             app:cardElevation="5dp">
 
-            <!-- Product Image -->
+
             <ImageView
                 android:id="@+id/imgshops"
                 android:layout_width="140dp"
@@ -40,44 +36,51 @@
                 android:adjustViewBounds="true"
                 tools:ignore="ContentDescription" />
 
-            <!-- Product Title -->
+
             <TextView
                 android:id="@+id/txtjudul"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_toEndOf="@id/imgshops"
                 android:fontFamily="@font/poppinssemibold"
                 android:text="Judul"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
-            <!-- Product Price -->
+
             <TextView
                 android:id="@+id/txtharga"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:text="Harga"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:fontFamily="@font/poppinsregular"
                 android:layout_toEndOf="@id/imgshops"
                 android:layout_below="@id/txtjudul"
                 android:layout_marginStart="10dp"
                 tools:ignore="HardcodedText" />
 
-            <!-- Close Button -->
+
             <ImageView
                 android:id="@+id/imgcloses"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/close"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="-32dp"
                 android:layout_toEndOf="@id/txtjudul"
                 tools:ignore="ContentDescription" />
 
-            <!-- Add Button -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratting"
+                android:layout_toEndOf="@id/imgshops"
+                android:layout_below="@id/imgtambah"
+                android:layout_marginLeft="10dp"
+                />
             <ImageView
                 android:id="@+id/imgtambah"
                 android:layout_width="wrap_content"
@@ -88,16 +91,16 @@
                 android:layout_toEndOf="@id/imgshops"
                 tools:ignore="ContentDescription" />
 
-            <!-- Like Button -->
+
             <ImageView
                 android:id="@+id/imglike"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/like"
                 android:layout_toEndOf="@id/imgtambah"
                 android:layout_below="@id/imgcloses"
                 android:layout_marginTop="30dp"
-                android:layout_marginStart="75dp"
+                android:layout_marginStart="20dp"
                 tools:ignore="ContentDescription" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

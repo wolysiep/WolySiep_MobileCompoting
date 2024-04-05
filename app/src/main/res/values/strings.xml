@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">TESS</string>
+
+    <string name="noken">
+        Noken Papua, karya seni yang menggugah hati dan menawarkan potongan budaya yang autentik.
+    </string>
+
+    <string name="koteka">
+        Koteka Papua, simbol budaya yang kaya akan tradisi. Mengenakan koteka adalah ungkapan dari kebanggaan dan identitas suku asli Papua.
+    </string>
+
+    <string name="kalung">
+        Kalung Papua, sentuhan elegan dari keindahan alam Papua. Setiap helaian yang dirajut menjadi kalung adalah cerminan.
+    </string>
+    <string name="mahakota">
+        Mahakota Papua, gemerlapnya kejayaan dan kekuatan tradisi. Setiap helai ukiran dan hiasan emas membawa cerita dari masa lalu yang megah.
+    </string>
+    <string name="salih">
+        Salih Papua, warisan tangan-tangan terampil yang menjalin benang tradisi. Dari alam hutan hingga ke tangan ahli pengrajin.
+    </string>
 </resources>

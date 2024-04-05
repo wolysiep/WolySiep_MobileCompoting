@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecycviewActivity">
-
+    tools:context=".ProfilepageActicity">
     <RelativeLayout
         android:id="@+id/hedarview"
         android:layout_width="match_parent"
@@ -48,16 +47,40 @@
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="58dp"
-        android:id="@+id/papuansshopp"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/akuns7"
+        android:layout_marginBottom="80dp"
+        tools:ignore="ContentDescription" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       >
+       <Button
+           android:id="@+id/logouts"
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:layout_below="@id/hedarview"
+           android:layout_marginTop="510dp"
+           android:text="Log Out      "
+           android:textSize="15sp"
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/buton_saya"
+           android:fontFamily="@font/poppinssemibold"
+           tools:ignore="HardcodedText,NotSibling" />
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/logout"
+           android:layout_marginTop="515dp"
+           android:layout_marginStart="230dp"
+           tools:ignore="ContentDescription" />
+   </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/footerview"
@@ -88,28 +111,29 @@
             android:layout_marginStart="30dp"
             android:layout_toEndOf="@id/imgberandas"
             android:elevation="7dp"
-            android:src="@drawable/keranjang2"
+            android:src="@drawable/keranjang1"
             tools:ignore="ContentDescription,ImageContrastCheck" />
         <ImageView
             android:id="@+id/imgpesans"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/pesans1"
             android:elevation="7dp"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/imgkeranjangs"
             android:layout_marginStart="30dp"
             tools:ignore="ContentDescription" />
+
         <ImageView
             android:id="@+id/imgakuns"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/akun1"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/imgpesans"
             android:elevation="7dp"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/imgpesans"
-            android:layout_marginStart="30dp"
-            tools:ignore="ContentDescription" />
+            android:src="@drawable/akun2"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
     </RelativeLayout>
 
 </RelativeLayout>
