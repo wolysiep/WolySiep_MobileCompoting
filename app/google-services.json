@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050719041898",
+    "project_id": "mobile-compoting-woly-siep",
+    "storage_bucket": "mobile-compoting-woly-siep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050719041898:android:c7c27858081ae994898d13",
+        "android_client_info": {
+          "package_name": "com.example.tess"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvEQuvb081zIlbxi6sgDft5ohpn04dO5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

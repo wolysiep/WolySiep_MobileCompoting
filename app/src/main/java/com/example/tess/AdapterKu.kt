@@ -10,13 +10,14 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
+@Suppress("NAME_SHADOWING")
 class AdapterKu(private val context: Context, private val courseList: List<DataKu>) : BaseAdapter() {
 
     override fun getCount(): Int {
         return courseList.size
     }
 
-    override fun getItem(position: Int): Any? {
+    override fun getItem(position: Int): Any {
         return courseList[position]
     }
 

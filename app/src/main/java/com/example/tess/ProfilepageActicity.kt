@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tess.databinding.ActivityProfilepageActicityBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class ProfilepageActicity : AppCompatActivity() {
     private lateinit var binding: ActivityProfilepageActicityBinding
@@ -37,7 +38,12 @@ class ProfilepageActicity : AppCompatActivity() {
             startActivity(Intent(this, ProfilepageActicity::class.java))
         }
         binding.logouts.setOnClickListener{
-            startActivity(Intent(this, LoginpageActivity::class.java))
+            FirebaseAuth.getInstance().signOut()
+            Intent(this, LoginpageActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
         }
+
     }
 }

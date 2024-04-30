@@ -50,7 +50,7 @@ class RecycviewActivity : AppCompatActivity() {
         papuansAdapter = MyAdapter(listJualan)
         binding.papuansshopp.adapter = papuansAdapter
 
-        // Implementasi fungsi onClick pada tombol-tombol
+
         binding.imgberandas.setOnClickListener{
             startActivity(Intent(this, HomepageActivity::class.java))
         }

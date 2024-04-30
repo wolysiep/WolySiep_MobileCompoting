@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding.btnstart.setOnClickListener{
-            startActivity(Intent(this, LoginpageActivity::class.java))
+           startActivity(Intent(this, LoginpageActivity::class.java))
         }
     }
 

@@ -44,6 +44,7 @@
             tools:ignore="Orientation">
 
             <EditText
+                android:id="@+id/txtemailinput"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:fontFamily="@font/poppinsregular"
@@ -70,6 +71,7 @@
             tools:ignore="Orientation">
 
             <EditText
+                android:id="@+id/txtpasswordinput"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="Masukan password anda"

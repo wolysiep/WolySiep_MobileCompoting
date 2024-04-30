@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtregister"
-        android:text="Ganti Password"
+        android:text="Resset Password"
         android:layout_below="@id/imgatas"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinsbold"
@@ -62,75 +62,30 @@
             android:id="@+id/txtemail"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="10dp"
-            android:hint="Email/Telepon"
+            android:layout_marginTop="100dp"
+            android:hint="Masukan email anda disini..."
             android:paddingStart="40dp"
             android:inputType="textEmailAddress"
             android:textSize="14sp"
             tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
-        <EditText
-            android:id="@+id/txtedit2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="Password lama"
-            android:inputType="textPassword"
-            android:layout_marginTop="10dp"
-            android:paddingStart="40dp"
-            android:textSize="14sp"
-            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
-
-        <EditText
-            android:id="@+id/txtpassword2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="10dp"
-            android:hint="Password baru"
-            android:inputType="textPassword"
-            android:paddingStart="40dp"
-            android:textSize="14sp"
-            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="-100dp"
-            android:src="@drawable/key2"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="47dp"
-            android:src="@drawable/key2"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="-155dp"
+            android:layout_marginTop="-40dp"
             android:src="@drawable/cloud"
             tools:ignore="ContentDescription" />
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="-87dp"
-            android:src="@drawable/user"
-            tools:ignore="ContentDescription,VisualLintBounds" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnubahpassword"
         android:layout_width="230dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_below="@id/inputt"
         android:layout_centerInParent="true"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="30dp"
         android:width="200dp"
         android:background="@drawable/buton_saya"
         android:fontFamily="@font/poppinsbold"
@@ -149,7 +104,7 @@
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_below="@id/btnubahpassword"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/imgshopping2"
         android:layout_marginStart="150dp"
         tools:ignore="ContentDescription" />
